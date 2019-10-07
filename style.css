@@ -80,11 +80,21 @@ body{
     padding: 4px 48px;
     color:#ffffff;
     background-color: cornflowerblue;
+    
 }
+
+.section-header a:hover{
+    text-decoration: none;
+    
+}
+
+
+ 
 .card-img-top{
-    transition: box-shadow 650ms;
+    transition: all 650ms;
 }
 .card-img-top:hover {
+    transform: translate(0, 5px);
     box-shadow: 0 10px 6px -6px;
 }
 
@@ -94,6 +104,23 @@ body{
 .card .btn:hover{
     padding: 6px 30px;
     color:red;
+}
+
+#sidebar {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 16px;
+    box-shadow: inset 27px 0 51px -18px rgba(0,0,0,0.75); 
+}
+
+.card-meta{
+    color: #333;
+    font-size: 14px;
+    padding: 16px;
+}
+.card-body h5{
+    font-size: 30px;
+    color: cornflowerblue;
 }
 
 
@@ -129,4 +156,44 @@ footer h4 {
 .footer-right .copyright{
     font-weight: 100 !important;
     font-size: 12px;
+}
+
+@media (max-width:768px){
+    .nav-item .dropdown-menu{
+        margin-left: 0px !important;
+        width: 46%;
+    }
+}
+
+@media (max-width:375px){
+    .nav-item .dropdown-menu{
+        margin-left: 0px !important;
+        width: 100% !important;  
+    }
+    .dropdown-menu .form-control {   
+        width: 15% !important;
+    }
+    .dropdown-menu .btn {   
+        width: 25% !important;
+        font-size: 10px;
+    }
+    .header-welcome h1 {
+        
+        font-size: 50px;
+    }
+    
+    .header-welcome h3 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:414px){
+    .nav-item .dropdown-menu{
+        margin-left: 0px !important;
+        width: 100%;
+        font-size: 0.8rem;   
+    }
+    .dropdown-menu .form-control {   
+        width: 72% !important;
+    }
 }
